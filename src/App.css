@@ -56,12 +56,22 @@ button{
 }
 
 .imageContainer{
-  background-color: #672280;
+  background-image: var(--primary);
   margin: 40px 0;
-  min-height: 400px;
+  min-height: 500px;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 30px
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+  border-radius: 13px;
+}
+
+.imageContainer article{
+  background-color: #67228045;
+  color: white;
+  font-size: 2.6em;
+  text-align: center;
+  width: 80%;
 }

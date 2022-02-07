@@ -10,6 +10,11 @@ export default function Body(){
                 </div>
                 <button>Get a new meme Image</button>
             </form>
+
+            <div className="imageContainer">
+                <article>Hello</article>
+                <article>Hi, i'm down here</article>
+            </div>
         </div>
     )
 }

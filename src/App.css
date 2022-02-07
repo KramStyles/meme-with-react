@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css");
 
 *{
   padding: 0;
@@ -22,4 +22,46 @@ header{
   justify-content: space-between;
   color: white;
   align-items: center;
+}
+header .fab{
+  font-size: 150%;
+  /* display: inline-block; */
+  margin-right: 10px;
+}
+
+.container{
+  width: 75%;
+  margin: 50px auto;
+}
+input, button{
+  width: 45%;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 13px;
+  border: none;
+  font-family: raleway;
+  font-weight: bold;
+  font-size: 13px;
+  color: #7D239D;
+}
+.inputHolder{
+  display: flex;
+  justify-content: space-around;
+}
+button{
+  background: var(--primary);
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.imageContainer{
+  background-color: #672280;
+  margin: 40px 0;
+  min-height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px
 }

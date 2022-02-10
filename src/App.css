@@ -67,6 +67,7 @@ button{
   padding: 30px;
   align-items: center;
   border-radius: 13px;
+  background-position: center;
 }
 
 .imageContainer article{
@@ -78,6 +79,9 @@ button{
 }
 
 @media screen and (max-width: 500px){
+  header{
+    justify-content: center;
+  }
   header h3{
     display: none;
   }

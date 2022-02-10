@@ -3,10 +3,6 @@ import memesdata from "../memesdata";
 
 
 export default function Body(){
-    function saySomething(){
-        console.log('I was clicked')
-    }
-
     function handleClick() {
         const memes = memesdata.data.memes;
         const randNum = Math.floor(Math.random() * memes.length);
@@ -15,8 +11,8 @@ export default function Body(){
 
         let upper = document.getElementById('txtUpper').value.trim();
         let lower = document.getElementById('txtLower').value.trim();
-        if(upper == '') upper = name;
-        if(lower == '') lower = name;
+        if(upper === '') upper = name;
+        if(lower === '') lower = name;
 
         document.getElementsByClassName('imageContainer')[0].style.backgroundImage = `url(${url})`;
         document.getElementById('txtTop').textContent = upper;

@@ -1,3 +1,4 @@
+import React from 'react'
 import memesdata from "../memesdata";
 
 export default function Body(){

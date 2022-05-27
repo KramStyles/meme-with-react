@@ -8,6 +8,8 @@ export default function TestFile() {
     const [stuff, setStuff] = useState('No');
     const [active, setActive] = useState(false);
 
+    const [counter, setCounter] = useState(0);
+
     const thingsElement = things.map(item => <p key={item}>Thing: {item}</p>)
  
     const addItem = () => {
@@ -30,8 +32,15 @@ export default function TestFile() {
     <div className='container'>
         <button onClick={addItem}>Add Item</button>
         <button onClick={handleClick}>Change Stuff</button>
+        <div style={{
+            display: 'flex',
+        }}>
+            <button onClick={e => {setCounter(counter + 1)}}>Increment</button>
+            <button onClick={e => {setCounter(counter - 1)}}>Decrement</button>
+        </div>
         {thingsElement}
         <h3>{stuff}</h3>
+        <h3>{counter}</h3>
     </div>
   )
 }

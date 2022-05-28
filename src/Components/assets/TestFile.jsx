@@ -15,7 +15,10 @@ export default function TestFile() {
     const addItem = () => {
         let newItem = `Thing ${things.length + 1}`;
         // setThings(prev => [...prev, newItem])
+        // setThings(prev => prev.push(newItem))
+
         // Introducing best practice
+
         setThings(function(prev){
             return prev.push(newItem);
         })
@@ -40,7 +43,7 @@ export default function TestFile() {
             display: 'flex',
         }}>
             <button onClick={e => {setCounter(counter + 1)}}>Increment</button>
-            <button onClick={e => {setCounter(function(old){return old - 1})}}>Decrement</button>
+            <button onClick={e => {setCounter(prev => prev - 1)}}>Decrement</button>
         </div>
         {thingsElement}
         <h3>{stuff}</h3>

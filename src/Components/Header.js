@@ -1,5 +1,5 @@
-import React from "react";
-
+import { Link } from "react-router-dom"
+import React from 'react'
 function Header(){
     return(
         <header>
@@ -8,6 +8,7 @@ function Header(){
             </div>
             <div>
                 <h3>React Course - Project 3</h3>
+                <Link to='/test'>Test</Link>
             </div>
         </header>
     )
